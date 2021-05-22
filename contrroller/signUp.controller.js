@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
                             to: email, // list of receivers
                             subject: "Hello ✔", // Subject line
                             text: "Hello world?", // plain text body
-                            html: `<a href="http://localhost:3000/confirmeEmail/${token}">Confirm</a>`, // html body
+                            html: `<a href="https://ara7a34.herokuapp.com/confirmeEmail/${token}">Confirm</a>`, // html body
                         });
                         res.json({ message: "done" });
                     }
